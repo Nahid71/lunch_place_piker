@@ -14,7 +14,7 @@ class CreateUserView(generics.ListCreateAPIView):
     authentication_classes = []
     # pagination_class = DisplaySize
 
-    def post(self, request, format='json'):
+    def post(self, request):
         serializer = CustomUserSerializer(data=request.data,  context={"request": request})
         if serializer.is_valid():
             inst = serializer.save()

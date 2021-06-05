@@ -38,4 +38,4 @@ class FoodManus(models.Model):
     modified = models.DateTimeField(auto_now=True, null=True)
 
     def __str__(self):
-        return self.name
+        return self.day
