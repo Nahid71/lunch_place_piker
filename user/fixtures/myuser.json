@@ -1,0 +1,23 @@
+[
+    {
+        "model": "user.customuser",
+        "pk": "d0434091-c866-4b95-95cc-f16c06b6c250",
+        "fields": {
+            "password": "pbkdf2_sha256$216000$AWWGZy7vCUyh$mKQtvz22ZwEzfjYufPTbNLW3sSoPFMd9AsV4GBGnX+M=",
+            "last_login": "2021-03-17T06:55:19.076Z",
+            "is_superuser": true,
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-02-10T08:18:26.073Z",
+            "username": "admin",
+            "email": "admin@rp.com",
+            "first_name": "admin",
+            "last_name": null,
+            "is_verified": false,
+            "phone_number": null,
+            "profile_pic": "",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]
