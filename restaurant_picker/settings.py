@@ -32,9 +32,11 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     # third party app
     'drf_yasg',
+    'django_filters',
     # custom app
     'api',
     'user',
+    'restaurant',
 ]
 
 MIDDLEWARE = [
@@ -101,6 +103,7 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
 }
 
 AUTHENTICATION_BACKENDS = (
