@@ -45,6 +45,7 @@ class Votes(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE, related_name='r_votes')
     employee = models.ManyToManyField('user.CustomUser', related_name='votes')
+    vote_count = models.PositiveIntegerField(default=0)
     day = models.DateField(auto_now=False, auto_now_add=False, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True, null=True)
     modified = models.DateTimeField(auto_now=True, null=True)

@@ -10,4 +10,5 @@ urlpatterns = [
    path('foodItem/', views.FoodItemView.as_view(), name='foodItem'),
    path('foodItemModify/<pk>/', views.FoodItemRUDView.as_view(), name='foodItemmodify'),
    path('vote/', views.VoteView.as_view(), name='vote'),
+   path('winner/', views.Winner.as_view(), name='winner'),
 ]
