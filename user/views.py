@@ -1,8 +1,10 @@
+from django.contrib.auth import authenticate
 from rest_framework import generics, status
 from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication
+from rest_framework.authtoken.models import Token
 from rest_framework import permissions
-from .serializers import CustomUserSerializer
+from .serializers import CustomUserSerializer, UserLoginSerializer
 from .models import CustomUser
 # Create your views here.
 
@@ -59,4 +61,29 @@ class UserRUDView(generics.RetrieveUpdateDestroyAPIView):
         
         serializer = self.get_serializer(inst, context={"request": request})
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+    
+
+
+class UserLoginView(generics.CreateAPIView):
+    serializer_class = UserLoginSerializer
+    permission_classes = []
+    authentication_classes = []
+
+    def post(self, request, **kwargs):
+        email = request.data['email']
+        password = request.data['password']
+        print(email, password)
+        if email == 'admin@rp.com':
+            return Response({'details': 'Invalid Credentials', 'meta': f"Restrcted access! for {email}"}, status=400)
+        user = authenticate(email=email, password=password)
+        if user:
+            serializer = CustomUserSerializer(user, many=False, context={"request": request})
+            token, _created = Token.objects.get_or_create(user=user)
+            dikt = {}
+            dikt.update(serializer.data)
+            dikt.update({'token': token.key})
+            return Response(dikt, status=200)
+        else:
+            return Response({'details': 'Invalid Credentials'}, status=400)
 

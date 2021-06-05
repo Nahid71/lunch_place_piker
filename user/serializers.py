@@ -16,3 +16,8 @@ class CustomUserSerializer(serializers.ModelSerializer):
         # if request:
         #     data['profile_pic'] = request.build_absolute_uri(instance.profile_pic.url) if instance.profile_pic else None
         return data
+
+
+class UserLoginSerializer(serializers.Serializer):
+    email = serializers.EmailField(required=True)
+    password = serializers.CharField(required=True)
