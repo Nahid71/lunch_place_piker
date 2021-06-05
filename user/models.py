@@ -13,6 +13,7 @@ class CustomUser(AbstractUser):
     email = models.EmailField(_('email address'), unique=True)
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100, blank=True, null=True)
+    employee_id = models.CharField(max_length=100, blank=True, null=True)
     is_verified = models.BooleanField(default=False)
     phone_number = models.CharField(
         max_length=15, blank=True, null=True, validators=[int_list_validator(

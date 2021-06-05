@@ -1,14 +1,13 @@
-from rest_framework import generics, status
-from rest_framework.response import Response
+from rest_framework import generics
 from rest_framework import permissions
+from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication
-from .models import Restaurant, FoodItem, FoodManus
+from datetime import datetime, timedelta
+from .models import Restaurant, FoodItem, FoodManus, Votes
 from restaurant_picker.pagination import DisplaySize
-from .serializers import RestaurantSerializer, FoodItemSerializer, FoodManusSerializer
+from .serializers import RestaurantSerializer, FoodItemSerializer, FoodManusSerializer, VotesSerializer
 from .filters import RestaurantFilter, FoodItemFilter, FoodManusFilter
-from .models import Restaurant, FoodItem, FoodManus
 
-# Create your views here.
 
 class RestaurantView(generics.ListCreateAPIView):
     queryset = Restaurant.objects.all()
@@ -80,3 +79,25 @@ class FoodManusRUDView(generics.RetrieveUpdateDestroyAPIView):
         idx = self.kwargs['pk']
         # only the FoodManus owner or profile_manager (role) can change details
         return FoodManus.objects.filter(id=idx)
+
+
+class VoteView(generics.CreateAPIView):
+    serializer_class = VotesSerializer
+    permission_classes = []
+    authentication_classes = []
+
+    def post(self, request, **kwargs):
+        restaurant = request.data['restaurant']
+        employee = request.data['employee']
+        launch_end_time = 13 # 01:00PM
+        if datetime.today().hour < launch_end_time:
+            vote_with_exist_restaurant = Votes.objects.filter(restaurant=restaurant, day=datetime.today().date()).first()
+            if vote_with_exist_restaurant:
+                vote_with_exist_restaurant.employee.add(employee)
+            else:
+                create_vote_with_restaurant = Votes.objects.create(restaurant=restaurant, day=datetime.today().date())
+                create_vote_with_restaurant.employee.add(employee)
+            return Response({'details': 'Success' }, status=200)
+        else:
+            return Response({'details': 'Vote is not accepting now'}, status=400)
+

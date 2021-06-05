@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from .models import Restaurant, FoodItem, FoodManus
+from .models import Restaurant, FoodItem, FoodManus, Votes
+from user.models import CustomUser
 
 
 class RestaurantSerializer(serializers.ModelSerializer):
@@ -44,4 +45,16 @@ class FoodManusSerializer(serializers.ModelSerializer):
         data['food_item'] = FoodItemSerializer(instance.food_item.all(), many=True, context={"request": request})
         data['created'] = instance.created
         data['modified'] = instance.modified
+        return data
+
+
+class VotesSerializer(serializers.ModelSerializer):
+    employee = serializers.PrimaryKeyRelatedField(queryset=CustomUser.objects.all(), required=True)
+    class Meta:
+        model = Votes
+        exclude = ('day',)
+    
+    def to_representation(self, instance):
+        request = self.context['request']
+        data = super(VotesSerializer, self).to_representation(instance)
         return data

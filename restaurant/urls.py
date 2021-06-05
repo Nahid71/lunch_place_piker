@@ -1,4 +1,4 @@
-from django.urls import include, path
+from django.urls import path
 from . import views
 
 
@@ -9,4 +9,5 @@ urlpatterns = [
    path('foodManuesModify/<pk>/', views.FoodManusRUDView.as_view(), name='foodManuesmodify'),
    path('foodItem/', views.FoodItemView.as_view(), name='foodItem'),
    path('foodItemModify/<pk>/', views.FoodItemRUDView.as_view(), name='foodItemmodify'),
+   path('vote/', views.VoteView.as_view(), name='vote'),
 ]

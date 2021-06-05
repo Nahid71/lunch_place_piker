@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from .models import CustomUser
-import requests
 
 
 class CustomUserSerializer(serializers.ModelSerializer):
