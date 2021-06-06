@@ -26,7 +26,7 @@ class CreateUserView(generics.ListCreateAPIView):
             res_data = serializer.data
            
 
-            return Response(res_data, status=200)
+            return Response(res_data, status=201)
         else:
             return Response(serializer.errors, status=400)
 
