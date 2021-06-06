@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     # third party app
     'drf_yasg',
     'django_filters',
+    'drf_api_logger',
     # custom app
     'api',
     'user',
@@ -45,6 +46,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'drf_api_logger.middleware.api_logger_middleware.APILoggerMiddleware',
 ]
 
 ROOT_URLCONF = 'restaurant_picker.urls'
@@ -75,6 +77,7 @@ DATABASES = {
     'default': env.db()
 }
 
+DRF_API_LOGGER_DATABASE = True
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
