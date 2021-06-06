@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.authtoken.models import Token
 from rest_framework import permissions
-from .serializers import CustomUserSerializer, UserLoginSerializer
+from .serializers import CustomUserSerializer, UserLoginSerializer, UserLogoutSerializer
 from .models import CustomUser
 # Create your views here.
 
@@ -87,3 +87,12 @@ class UserLoginView(generics.CreateAPIView):
         else:
             return Response({'details': 'Invalid Credentials'}, status=400)
 
+
+class LogoutView(generics.CreateAPIView):
+    serializer_class = UserLogoutSerializer
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request, **kwargs):
+        request.user.auth_token.delete() #deleting the token for this user
+        return Response({'details': 'Success' }, status=200)

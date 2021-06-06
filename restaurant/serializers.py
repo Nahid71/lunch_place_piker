@@ -1,3 +1,4 @@
+import json
 from rest_framework import serializers
 from .models import Restaurant, FoodItem, FoodManus, Votes, Winner
 from user.models import CustomUser
@@ -30,11 +31,11 @@ class FoodItemSerializer(serializers.ModelSerializer):
 
 
 class FoodManusSerializer(serializers.ModelSerializer):
-
+   
     class Meta:
         model = FoodManus
         fields = '__all__'
-    
+
     def to_representation(self, instance):
         request = self.context['request']
         data = {}
@@ -42,7 +43,8 @@ class FoodManusSerializer(serializers.ModelSerializer):
         data['restaurants'] = instance.restaurants.id
         data['day'] = instance.day
         data['note'] = instance.note
-        data['food_item'] = FoodItemSerializer(instance.food_item.all(), many=True, context={"request": request})
+
+        data['food_item'] = FoodItemSerializer(instance.food_item.all(), many=True, context={"request": request}).data
         data['created'] = instance.created
         data['modified'] = instance.modified
         return data
@@ -60,7 +62,6 @@ class VotesSerializer(serializers.ModelSerializer):
 
 
 class WinnerSerializer(serializers.ModelSerializer):
-    employee = serializers.PrimaryKeyRelatedField(queryset=CustomUser.objects.all(), required=True)
     class Meta:
         model = Winner
         exclude = ('day',)

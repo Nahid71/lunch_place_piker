@@ -20,3 +20,7 @@ class CustomUserSerializer(serializers.ModelSerializer):
 class UserLoginSerializer(serializers.Serializer):
     email = serializers.EmailField(required=True)
     password = serializers.CharField(required=True)
+
+
+class UserLogoutSerializer(serializers.Serializer):
+    email = serializers.EmailField(required=False)

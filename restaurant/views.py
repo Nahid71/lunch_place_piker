@@ -84,18 +84,19 @@ class FoodManusRUDView(generics.RetrieveUpdateDestroyAPIView):
 
 class VoteView(generics.CreateAPIView):
     serializer_class = VotesSerializer
-    permission_classes = []
-    authentication_classes = []
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request, **kwargs):
         restaurant = request.data['restaurant']
         employee = request.data['employee']
+        restaurant_obj = Restaurant.objects.get(id=restaurant)
         vote_start_time = 11 # 11:00AM
         vote_end_time = 13 # 01:00PM
         if datetime.today().hour < vote_end_time and datetime.today().hour > vote_start_time: # not accepting any vote
             vote_with_exist_restaurant = Votes.objects.filter(restaurant=restaurant, day=datetime.today().date()).first()
             if not vote_with_exist_restaurant:
-                vote_with_exist_restaurant = Votes.objects.create(restaurant=restaurant, day=datetime.today().date())
+                vote_with_exist_restaurant = Votes.objects.create(restaurant=restaurant_obj, day=datetime.today().date())
             vote_with_exist_restaurant.employee.add(employee)
             vote_with_exist_restaurant.vote_count += 1
             vote_with_exist_restaurant.save()
@@ -103,7 +104,7 @@ class VoteView(generics.CreateAPIView):
         else:
             return Response({'details': 'Vote is not accepting now'}, status=400)
 
-class Winner(APIView):
+class WinnerView(APIView):
     permission_classes = []
     authentication_classes = []
 
@@ -118,11 +119,13 @@ class Winner(APIView):
                 last_1_day_winner = Winner.objects.filter(day=datetime.today().date() - timedelta(days=1)).first()
                 last_2_day_winner = Winner.objects.filter(day=datetime.today().date()- timedelta(days=2)).first()
                 last_3_day_winner = Winner.objects.filter(day=datetime.today().date()- timedelta(days=3)).first()
-                winner = Votes.objects.filter(day=datetime.today().date()).order_by('vote_count')
+                winner = Votes.objects.filter(day=datetime.today().date()).order_by('-vote_count')
                 for each in winner:
+                    print(each.restaurant.name)
                     if each.restaurant is not last_1_day_winner and each.restaurant is not last_2_day_winner and each.restaurant is not last_3_day_winner: # checking that the winner restaurant doesn't win for last 3 days
-                        x = winner.objects.create(restaurant=each.restaurant, day=datetime.today().date())
+                        x = Winner.objects.create(restaurant=each.restaurant, day=datetime.today().date())
                         x = WinnerSerializer(x, many=False).data
+                        break
             return Response({'details': 'Success', 'data': x}, status=200)
         else:
             return Response({'details': 'Winner is not decided yet'}, status=400)
