@@ -1,10 +1,76 @@
 [
     {
         "model": "user.customuser",
+        "pk": "208eb60b-3826-4f87-a2bb-95a63f9f36e4",
+        "fields": {
+            "password": "admin123",
+            "last_login": null,
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-06-06T22:23:56Z",
+            "username": "jahid",
+            "email": "jahid@gmail.com",
+            "first_name": "Jahid",
+            "last_name": "Hasan",
+            "employee_id": "968586",
+            "is_verified": true,
+            "phone_number": null,
+            "profile_pic": "",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.customuser",
+        "pk": "2e2c6ece-5715-4066-a110-de074f3adbb7",
+        "fields": {
+            "password": "admin123",
+            "last_login": null,
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-06-06T22:22:58Z",
+            "username": "nahid",
+            "email": "nahidjahid71@gmail.com",
+            "first_name": "Nahid",
+            "last_name": "Babu",
+            "employee_id": "034758734",
+            "is_verified": false,
+            "phone_number": "01768891172",
+            "profile_pic": "",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.customuser",
+        "pk": "525dcfb1-1225-4a50-b102-d5bd62cc95f1",
+        "fields": {
+            "password": "admin123",
+            "last_login": null,
+            "is_superuser": false,
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2021-06-06T22:24:31Z",
+            "username": "oahid",
+            "email": "oahid@gmail.com",
+            "first_name": "Oahid",
+            "last_name": "Hassan",
+            "employee_id": "7576",
+            "is_verified": true,
+            "phone_number": null,
+            "profile_pic": "",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "user.customuser",
         "pk": "d0434091-c866-4b95-95cc-f16c06b6c250",
         "fields": {
-            "password": "pbkdf2_sha256$216000$AWWGZy7vCUyh$mKQtvz22ZwEzfjYufPTbNLW3sSoPFMd9AsV4GBGnX+M=",
-            "last_login": "2021-03-17T06:55:19.076Z",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
+            "last_login": "2021-06-06T22:22:35.891Z",
             "is_superuser": true,
             "is_staff": true,
             "is_active": true,
@@ -13,6 +79,7 @@
             "email": "admin@rp.com",
             "first_name": "admin",
             "last_name": null,
+            "employee_id": null,
             "is_verified": false,
             "phone_number": null,
             "profile_pic": "",
@@ -20,4 +87,4 @@
             "user_permissions": []
         }
     }
-]
+    ]

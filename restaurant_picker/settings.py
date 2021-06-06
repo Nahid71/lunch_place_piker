@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'django_filters',
     'drf_api_logger',
+    'django_extensions',
     # custom app
     'api',
     'user',
@@ -141,3 +142,13 @@ STATICFILES_FINDERS = (
 # # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 # DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+SWAGGER_SETTINGS = {
+    'SECURITY_DEFINITIONS': {
+        'api_key': {
+            'type': 'apiKey',
+            'in': 'header',
+            'name': 'Authorization'
+        }
+    },
+}

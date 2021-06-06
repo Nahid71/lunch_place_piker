@@ -1,0 +1,210 @@
+[
+    {
+        "model": "restaurant.restaurant",
+        "pk": "0ff47304-ba61-4012-a190-86dbb6f1062a",
+        "fields": {
+            "name": "Oahid Restaurant",
+            "owner": "0dad9b94-ddb2-4714-9c93-20993969ef9b",
+            "logo": "",
+            "created": "2021-06-05T23:28:04.397Z",
+            "modified": "2021-06-05T23:28:04.397Z"
+        }
+    },
+    {
+        "model": "restaurant.restaurant",
+        "pk": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
+        "fields": {
+            "name": "My Restaurant",
+            "owner": "965af7ad-d531-4644-80e7-c2105b17a9a2",
+            "logo": "",
+            "created": "2021-06-05T22:16:18.523Z",
+            "modified": "2021-06-05T22:16:18.523Z"
+        }
+    },
+    {
+        "model": "restaurant.restaurant",
+        "pk": "e3a1df8f-a8a6-471f-8a1f-13e86fcbd35c",
+        "fields": {
+            "name": "Jahid Restaurant",
+            "owner": "d1a3b39e-ab90-4984-9989-02896d9253ca",
+            "logo": "",
+            "created": "2021-06-05T23:27:28.085Z",
+            "modified": "2021-06-05T23:27:28.085Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "13983de3-5fa8-4878-91db-cfc1fd94af49",
+        "fields": {
+            "name": "Fried Rice",
+            "picture": "",
+            "description": "kdjfl dlsfjljd fdsjldfljsdlkjfjsd fsdj fjsdj",
+            "price": 70,
+            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
+            "created": "2021-06-05T22:21:02.741Z",
+            "modified": "2021-06-05T22:21:02.741Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "85f51af1-69dd-46ef-b59d-5c96c26ab293",
+        "fields": {
+            "name": "Pizza",
+            "picture": "",
+            "description": "kdjfl dlsfjljd fdsjldfljsdlkjfjsd fsdj fjsdj",
+            "price": 80,
+            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
+            "created": "2021-06-05T22:19:54.660Z",
+            "modified": "2021-06-05T22:19:54.660Z"
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "4ed21127-38d6-42f0-8aba-e696cd3e5fe9",
+        "fields": {
+            "restaurants": "0ff47304-ba61-4012-a190-86dbb6f1062a",
+            "day": null,
+            "note": null,
+            "created": "2021-06-05T23:29:18.788Z",
+            "modified": "2021-06-05T23:29:18.788Z",
+            "food_item": [
+                "13983de3-5fa8-4878-91db-cfc1fd94af49",
+                "85f51af1-69dd-46ef-b59d-5c96c26ab293"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "55606679-12fc-40f1-bb62-3109ca98b8ca",
+        "fields": {
+            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
+            "day": null,
+            "note": null,
+            "created": "2021-06-05T22:53:21.738Z",
+            "modified": "2021-06-05T22:53:21.738Z",
+            "food_item": []
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "772e96b9-f931-43d5-8cde-47286cd02846",
+        "fields": {
+            "restaurants": "0ff47304-ba61-4012-a190-86dbb6f1062a",
+            "day": null,
+            "note": null,
+            "created": "2021-06-05T23:35:19.098Z",
+            "modified": "2021-06-05T23:35:19.098Z",
+            "food_item": [
+                "13983de3-5fa8-4878-91db-cfc1fd94af49",
+                "85f51af1-69dd-46ef-b59d-5c96c26ab293"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "7d8a3f51-9781-4ca1-b405-a39ede1b8b70",
+        "fields": {
+            "restaurants": "e3a1df8f-a8a6-471f-8a1f-13e86fcbd35c",
+            "day": null,
+            "note": null,
+            "created": "2021-06-05T23:28:54.307Z",
+            "modified": "2021-06-05T23:28:54.307Z",
+            "food_item": [
+                "13983de3-5fa8-4878-91db-cfc1fd94af49",
+                "85f51af1-69dd-46ef-b59d-5c96c26ab293"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "a1ccbf41-ef0f-4b6c-bdb3-9bc18b9ad90c",
+        "fields": {
+            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
+            "day": null,
+            "note": null,
+            "created": "2021-06-05T23:03:03.079Z",
+            "modified": "2021-06-05T23:03:03.079Z",
+            "food_item": [
+                "85f51af1-69dd-46ef-b59d-5c96c26ab293"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "af13c3b8-f7b5-4020-895b-f11fe4f3102c",
+        "fields": {
+            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
+            "day": null,
+            "note": null,
+            "created": "2021-06-05T23:25:10.803Z",
+            "modified": "2021-06-05T23:25:10.803Z",
+            "food_item": [
+                "13983de3-5fa8-4878-91db-cfc1fd94af49",
+                "85f51af1-69dd-46ef-b59d-5c96c26ab293"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "b422ee9a-4fb5-46ce-b69a-9cd91af6ea46",
+        "fields": {
+            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
+            "day": null,
+            "note": null,
+            "created": "2021-06-05T23:13:15.238Z",
+            "modified": "2021-06-05T23:13:15.238Z",
+            "food_item": []
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "f9c331cf-0b54-4844-bce4-0dd889ab8714",
+        "fields": {
+            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
+            "day": "2021-06-06",
+            "note": "",
+            "created": "2021-06-05T23:11:01.175Z",
+            "modified": "2021-06-05T23:48:18.373Z",
+            "food_item": []
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "341f9534-74df-4958-a2e6-749788e6ca9b",
+        "fields": {
+            "restaurant": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
+            "vote_count": 1,
+            "day": "2021-06-06",
+            "created": "2021-06-06T00:19:37.756Z",
+            "modified": "2021-06-06T00:19:37.759Z",
+            "employee": [
+                "0dad9b94-ddb2-4714-9c93-20993969ef9b"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "6703b71f-c5fb-4de7-9529-ae46199272d4",
+        "fields": {
+            "restaurant": "0ff47304-ba61-4012-a190-86dbb6f1062a",
+            "vote_count": 2,
+            "day": "2021-06-06",
+            "created": "2021-06-06T00:17:26.139Z",
+            "modified": "2021-06-06T00:18:04.338Z",
+            "employee": [
+                "0dad9b94-ddb2-4714-9c93-20993969ef9b",
+                "965af7ad-d531-4644-80e7-c2105b17a9a2"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.winner",
+        "pk": "3e0babd8-28c7-46f2-8fa4-304d904d9478",
+        "fields": {
+            "restaurant": "0ff47304-ba61-4012-a190-86dbb6f1062a",
+            "day": "2021-06-06",
+            "created": "2021-06-06T08:37:22.257Z",
+            "modified": "2021-06-06T08:37:22.257Z"
+        }
+    }
+    ]
