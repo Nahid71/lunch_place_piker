@@ -75,13 +75,13 @@ For System IP: (e.g. 192.168.0.199)
 ### API Guide
 
 ###### Atuhentication API's
-![Authentication](https://ibb.co/yVqF9Kn)
+![Authentication](https://i.ibb.co/0Qry71j/image-2021-06-07-T13-35-29-409-Z.png)
 
 ##### Restaurant API's
-![Restaurant](https://ibb.co/H23P7xz)
+![Restaurant](https://i.ibb.co/RSd62B0/image-2021-06-07-T13-47-07-344-Z.png)
 
 ##### Create Food Items and set food manue for specific day
-![Food Manu](https://ibb.co/ZzZ5Hn5)
+![Food Manu](https://i.ibb.co/F4P2sS2/image-2021-06-07-T13-52-32-035-Z.png)
 
 ##### Vote Cast and get the winner of the day
-![Vote Cast | Winner](https://ibb.co/9cxwFBV)
+![Vote Cast | Winner](https://i.ibb.co/VJFH7bQ/image-2021-06-07-T13-56-55-315-Z.png)
