@@ -3,7 +3,7 @@
         "model": "user.customuser",
         "pk": "208eb60b-3826-4f87-a2bb-95a63f9f36e4",
         "fields": {
-            "password": "admin123",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
             "last_login": null,
             "is_superuser": false,
             "is_staff": true,
@@ -25,7 +25,7 @@
         "model": "user.customuser",
         "pk": "2e2c6ece-5715-4066-a110-de074f3adbb7",
         "fields": {
-            "password": "admin123",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
             "last_login": null,
             "is_superuser": false,
             "is_staff": true,
@@ -47,7 +47,7 @@
         "model": "user.customuser",
         "pk": "525dcfb1-1225-4a50-b102-d5bd62cc95f1",
         "fields": {
-            "password": "admin123",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
             "last_login": null,
             "is_superuser": false,
             "is_staff": true,
@@ -69,7 +69,7 @@
         "model": "user.customuser",
         "pk": "895f6b02-1d3b-4a30-be68-f49f7bfce917",
         "fields": {
-            "password": "admin123",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
             "last_login": null,
             "is_superuser": false,
             "is_staff": true,
@@ -91,7 +91,7 @@
         "model": "user.customuser",
         "pk": "cdc3435e-c090-43a5-8e03-daf180e0f88f",
         "fields": {
-            "password": "admin123",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
             "last_login": null,
             "is_superuser": false,
             "is_staff": true,
@@ -135,7 +135,7 @@
         "model": "user.customuser",
         "pk": "dfe952b0-01d4-4169-a1b7-ecb2b9f9cd30",
         "fields": {
-            "password": "admin123",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
             "last_login": null,
             "is_superuser": false,
             "is_staff": true,
@@ -157,7 +157,7 @@
         "model": "user.customuser",
         "pk": "e5e18f71-2741-4474-8cc1-5ac3402d66c0",
         "fields": {
-            "password": "admin123",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
             "last_login": null,
             "is_superuser": false,
             "is_staff": true,
@@ -179,7 +179,7 @@
         "model": "user.customuser",
         "pk": "2ae6bbb7-d937-4106-8966-c9d6dae7bbc4",
         "fields": {
-            "password": "admin123",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
             "last_login": null,
             "is_superuser": false,
             "is_staff": true,
@@ -201,7 +201,7 @@
         "model": "user.customuser",
         "pk": "a022b59f-da36-43a8-b8e2-8651bc27afd1",
         "fields": {
-            "password": "admin123",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
             "last_login": null,
             "is_superuser": false,
             "is_staff": true,
@@ -223,7 +223,7 @@
         "model": "user.customuser",
         "pk": "bb657f4b-5030-4ac3-8c4f-716589cc00c1",
         "fields": {
-            "password": "admin123",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
             "last_login": null,
             "is_superuser": false,
             "is_staff": true,
@@ -245,7 +245,7 @@
         "model": "user.customuser",
         "pk": "7eb16fe2-1184-4d0a-aafb-241aa04231f1",
         "fields": {
-            "password": "admin123",
+            "password": "pbkdf2_sha256$260000$UBGMEnxKbS7dLRVIFBSADd$jgI8qMV/rWuI1zTAPRbhEU3HGcZwUDbMaBInLJMHNks=",
             "last_login": null,
             "is_superuser": false,
             "is_staff": true,
