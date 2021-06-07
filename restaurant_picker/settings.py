@@ -1,3 +1,6 @@
+'''
+Reataurant Picker
+'''
 import os
 import environ
 env = environ.Env(DEBUG=(bool, False),)
@@ -5,10 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 DEBUG = env.get_value("DEBUG")
-DEBUG = True if DEBUG == "True" or DEBUG == True else False
-
 SECRET_KEY = env.get_value("SECRET_KEY")
-
 ALLOWED_HOSTS = ["*"]
 
 LOGIN_URL = '/admin'

@@ -19,12 +19,12 @@ from django.conf.urls import url
 from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib.auth.decorators import login_required
-from api.views import admin_logout
 from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
+from api.views import admin_logout
 
-schema_view = get_schema_view(
+SchemaView = get_schema_view(
   openapi.Info(
     title="Restaurant Picker API",
     default_version='v1',
@@ -38,11 +38,14 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    url(r'^$', login_required(function=schema_view.with_ui('swagger', cache_timeout=0), login_url='/admin/login/?next=/'), name='schema-swagger-ui'),
+    url(r'^$', login_required(function=SchemaView.with_ui( \
+        'swagger', cache_timeout=0), login_url='/admin/login/?next=/'), name='schema-swagger-ui'),
     url('admin/', admin.site.urls),
     url('api/v1/', include('api.urls')),
-    url(r'^(?P<format>\.json|\.yaml)$', login_required(function=schema_view.without_ui(cache_timeout=0), login_url='/admin/login/?next=/'), name='schema-json'),
-    url(r'^redoc/$', login_required(function=schema_view.with_ui('redoc', cache_timeout=0), login_url='/admin/login/?next=/'), name='schema-redoc'),
+    url(r'^(?P<format>\.json|\.yaml)$', login_required(function=SchemaView \
+        .without_ui(cache_timeout=0), login_url='/admin/login/?next=/'), name='schema-json'),
+    url(r'^redoc/$', login_required(function=SchemaView \
+        .with_ui('redoc', cache_timeout=0), login_url='/admin/login/?next=/'), name='schema-redoc'),
     path('accounts/logout/', admin_logout),
 ]
 

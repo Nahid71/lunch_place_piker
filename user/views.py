@@ -1,3 +1,6 @@
+'''
+Write all the business logic here.
+'''
 from django.contrib.auth import authenticate
 from rest_framework import generics, status
 from rest_framework.response import Response
@@ -63,8 +66,6 @@ class UserRUDView(generics.RetrieveUpdateDestroyAPIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     
-
-
 class UserLoginView(generics.CreateAPIView):
     serializer_class = UserLoginSerializer
     permission_classes = []
