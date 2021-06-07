@@ -45,6 +45,10 @@ pip install -r requirements.txt
 ```sh
 python manage.py runserver
 ```
+###### Unit Test
+```sh
+python manage.py test
+```
 
 ### Docker
 Restaurant Place picker Backend is very easy to install and deploy in a Docker container.
