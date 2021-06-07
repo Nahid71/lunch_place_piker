@@ -16,7 +16,7 @@ class Restaurant(models.Model):
 
 class FoodItem(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=255, unique=True)
+    name = models.CharField(max_length=255)
     picture = models.FileField(upload_to='food_item/', blank=True, null=True)
     description = models.TextField(blank=True, null=True)
     price = models.PositiveIntegerField(default=0)
@@ -25,7 +25,11 @@ class FoodItem(models.Model):
     modified = models.DateTimeField(auto_now=True, null=True)
 
     def __str__(self):
-        return self.name
+        return f'{self.name} Restaurant: {self.restaurants.name}'
+    
+    class Meta:
+        unique_together = ('restaurants', 'name')
+
 
 
 class FoodManus(models.Model):

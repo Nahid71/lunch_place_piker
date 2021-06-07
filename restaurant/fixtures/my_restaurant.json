@@ -1,210 +1,1099 @@
 [
     {
         "model": "restaurant.restaurant",
-        "pk": "0ff47304-ba61-4012-a190-86dbb6f1062a",
+        "pk": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
         "fields": {
-            "name": "Oahid Restaurant",
-            "owner": "0dad9b94-ddb2-4714-9c93-20993969ef9b",
+            "name": "Lisa Restaurant",
+            "owner": "cdc3435e-c090-43a5-8e03-daf180e0f88f",
             "logo": "",
-            "created": "2021-06-05T23:28:04.397Z",
-            "modified": "2021-06-05T23:28:04.397Z"
+            "created": "2021-06-07T11:18:49.879Z",
+            "modified": "2021-06-07T11:18:49.879Z"
         }
     },
     {
         "model": "restaurant.restaurant",
-        "pk": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
-        "fields": {
-            "name": "My Restaurant",
-            "owner": "965af7ad-d531-4644-80e7-c2105b17a9a2",
-            "logo": "",
-            "created": "2021-06-05T22:16:18.523Z",
-            "modified": "2021-06-05T22:16:18.523Z"
-        }
-    },
-    {
-        "model": "restaurant.restaurant",
-        "pk": "e3a1df8f-a8a6-471f-8a1f-13e86fcbd35c",
+        "pk": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
         "fields": {
             "name": "Jahid Restaurant",
-            "owner": "d1a3b39e-ab90-4984-9989-02896d9253ca",
+            "owner": "208eb60b-3826-4f87-a2bb-95a63f9f36e4",
             "logo": "",
-            "created": "2021-06-05T23:27:28.085Z",
-            "modified": "2021-06-05T23:27:28.085Z"
+            "created": "2021-06-07T11:17:38.109Z",
+            "modified": "2021-06-07T11:17:38.109Z"
+        }
+    },
+    {
+        "model": "restaurant.restaurant",
+        "pk": "b9d80976-7126-4968-8233-d03695fe8663",
+        "fields": {
+            "name": "Limon Restaurant",
+            "owner": "dfe952b0-01d4-4169-a1b7-ecb2b9f9cd30",
+            "logo": "",
+            "created": "2021-06-07T11:15:25.886Z",
+            "modified": "2021-06-07T11:15:25.886Z"
+        }
+    },
+    {
+        "model": "restaurant.restaurant",
+        "pk": "c191157c-9728-417e-8ea8-d70d3ef08064",
+        "fields": {
+            "name": "Nahid Restaurant",
+            "owner": "2e2c6ece-5715-4066-a110-de074f3adbb7",
+            "logo": "",
+            "created": "2021-06-07T11:18:02.329Z",
+            "modified": "2021-06-07T11:18:02.329Z"
+        }
+    },
+    {
+        "model": "restaurant.restaurant",
+        "pk": "fb828b3a-c46f-4755-83ae-207577c37024",
+        "fields": {
+            "name": "Oahid Restaurant",
+            "owner": "525dcfb1-1225-4a50-b102-d5bd62cc95f1",
+            "logo": "",
+            "created": "2021-06-07T11:18:23.271Z",
+            "modified": "2021-06-07T11:18:23.271Z"
         }
     },
     {
         "model": "restaurant.fooditem",
-        "pk": "13983de3-5fa8-4878-91db-cfc1fd94af49",
+        "pk": "09b55dbd-e42c-43d4-9f9e-5c315e285fb7",
         "fields": {
-            "name": "Fried Rice",
-            "picture": "",
-            "description": "kdjfl dlsfjljd fdsjldfljsdlkjfjsd fsdj fjsdj",
-            "price": 70,
-            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
-            "created": "2021-06-05T22:21:02.741Z",
-            "modified": "2021-06-05T22:21:02.741Z"
+            "name": "Pasta salad",
+            "picture": "food_item/Pasta_salad.jpg",
+            "description": "Pasta salad is a dish prepared with one or more types of pastas, and often tossed in vinegar oil. It must include fresh vegetables and a simple dressing devoid of any fat and cream.\r\nServing size of 140gms consists of approximately 58 calories, which is a very healthy and simple option for lunch.",
+            "price": 32,
+            "restaurants": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "created": "2021-06-07T11:32:51.413Z",
+            "modified": "2021-06-07T11:32:51.413Z"
         }
     },
     {
         "model": "restaurant.fooditem",
-        "pk": "85f51af1-69dd-46ef-b59d-5c96c26ab293",
+        "pk": "120331dc-1865-498f-a097-c1d5732f1342",
         "fields": {
-            "name": "Pizza",
+            "name": "Lemon rice",
             "picture": "",
-            "description": "kdjfl dlsfjljd fdsjldfljsdlkjfjsd fsdj fjsdj",
-            "price": 80,
-            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
-            "created": "2021-06-05T22:19:54.660Z",
-            "modified": "2021-06-05T22:19:54.660Z"
+            "description": "",
+            "price": 30,
+            "restaurants": "b9d80976-7126-4968-8233-d03695fe8663",
+            "created": "2021-06-07T11:16:44.952Z",
+            "modified": "2021-06-07T11:16:44.952Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "17da2e89-eadc-4fe7-a7aa-d26d5937fa57",
+        "fields": {
+            "name": "Lemon rice",
+            "picture": "food_item/Lemon_rice_jIAgsfw.jpg",
+            "description": "Lemon Rice is a delicious dish you can easily put together when in a hurry. You can also make it with leftover rice.\r\nOne plate of lemon rice consists of approximately 249 calories. Don't forget to add some greens, and protein to it.",
+            "price": 38,
+            "restaurants": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "created": "2021-06-07T11:35:31.013Z",
+            "modified": "2021-06-07T11:35:31.013Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "23fcced6-bd0e-4496-9d09-190fe6b83806",
+        "fields": {
+            "name": "Rice, sambhar and curd",
+            "picture": "food_item/Rice_sambhar_and_curd_LY7Wefi.jpg",
+            "description": "2 cups of rice and 1 cup of sambhar and curd is an easy, quick and simple dish to make. It is a very healthy and nutritious office lunch.\r\nThis entire meal consists of approximately 300-500 calories. Ensure that you control the rice portion to less than 60gms and add some vegetables on the side.",
+            "price": 30,
+            "restaurants": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "created": "2021-06-07T11:36:25.472Z",
+            "modified": "2021-06-07T11:36:25.472Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "25ba644c-6e27-4d05-acf8-49390ca855e3",
+        "fields": {
+            "name": "Moong dal khichdi",
+            "picture": "food_item/Moong_dal_khichdi_Jw512af.jpg",
+            "description": "One plate of moong dal khichdi is a very healthy combination of green moong dal and rice. This is one of the most nutritious rice recipes, which is easy in preparation and tastes great.\r\nOne plate moong dal khichdi consists of approximately 176 calories and 5.9gms protein",
+            "price": 43,
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "created": "2021-06-07T11:30:06.635Z",
+            "modified": "2021-06-07T11:30:06.635Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "2dde0042-ee23-42dc-99d6-1ef50d7f942b",
+        "fields": {
+            "name": "Moong dal khichdi",
+            "picture": "food_item/Moong_dal_khichdi_FeCyeZi.jpg",
+            "description": "One plate of moong dal khichdi is a very healthy combination of green moong dal and rice. This is one of the most nutritious rice recipes, which is easy in preparation and tastes great.\r\nOne plate moong dal khichdi consists of approximately 176 calories and 5.9gms protein.",
+            "price": 23,
+            "restaurants": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "created": "2021-06-07T11:35:01.033Z",
+            "modified": "2021-06-07T11:35:01.033Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "3cd76250-d748-4d88-a9f8-6717ef761a40",
+        "fields": {
+            "name": "Moong dal khichdi",
+            "picture": "food_item/Moong_dal_khichdi.jpg",
+            "description": "One plate of moong dal khichdi is a very healthy combination of green moong dal and rice. This is one of the most nutritious rice recipes, which is easy in preparation and tastes great.\r\nOne plate moong dal khichdi consists of approximately 176 calories and 5.9gms protein.",
+            "price": 40,
+            "restaurants": "b9d80976-7126-4968-8233-d03695fe8663",
+            "created": "2021-06-07T11:16:17.070Z",
+            "modified": "2021-06-07T11:16:17.070Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "4595c8cb-ecca-4289-8b90-a225cb9770ff",
+        "fields": {
+            "name": "Lemon rice",
+            "picture": "food_item/Lemon_rice.jpg",
+            "description": "Lemon Rice is a delicious dish you can easily put together when in a hurry. You can also make it with leftover rice.\r\nOne plate of lemon rice consists of approximately 249 calories. Don't forget to add some greens, and protein to it.",
+            "price": 34,
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "created": "2021-06-07T11:30:48.010Z",
+            "modified": "2021-06-07T11:30:48.010Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "85bb4dcc-5a4f-404d-8a2f-00ac734f73af",
+        "fields": {
+            "name": "Chicken sandwich",
+            "picture": "",
+            "description": "Simple yet a vey nutritious and stomach filling dish, tossed with lettuce leaves and other greens.\r\nOne sandwich consists of approximately 300-350 calories.",
+            "price": 22,
+            "restaurants": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "created": "2021-06-07T11:33:54.558Z",
+            "modified": "2021-06-07T11:33:54.558Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "88cce346-ad0f-41c3-a691-61accab1ea9d",
+        "fields": {
+            "name": "Methi parantha with onion chutney and greens",
+            "picture": "",
+            "description": "2-3 methi parathas along with onion chutney, is a neat little package, which is healthy, yummy and delicious.\r\n1 paratha includes approximately 170-200 calories. Ensure that it is cooked with little to no oil.",
+            "price": 33,
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "created": "2021-06-07T11:31:39.732Z",
+            "modified": "2021-06-07T11:31:39.732Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "8ed6c930-a00b-4f35-9f5a-bd20b7222ab7",
+        "fields": {
+            "name": "Peas pulao with carrot raita",
+            "picture": "food_item/Peas_pulao_with_carrot_raita_YFo7Smk.jpg",
+            "description": "Half cup of peas pulao served with 111.4gms of carrot raita is a great alternative to plain boiled rice and accompaniment for any main course, be it vegetarian or meat-based.\r\nPeas pulao consists of approximately 168 calories and carrot raita includes approximately 76 calories.",
+            "price": 40,
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "created": "2021-06-07T11:29:34.739Z",
+            "modified": "2021-06-07T11:29:34.739Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "929f442b-76e9-404d-b900-079b4f061531",
+        "fields": {
+            "name": "Rice, sambhar and curd",
+            "picture": "food_item/Rice_sambhar_and_curd.jpg",
+            "description": "2 cups of rice and 1 cup of sambhar and curd is an easy, quick and simple dish to make. It is a very healthy and nutritious office lunch.\r\nThis entire meal consists of approximately 300-500 calories. Ensure that you control the rice portion to less than 60gms and add some vegetables on the side.",
+            "price": 40,
+            "restaurants": "b9d80976-7126-4968-8233-d03695fe8663",
+            "created": "2021-06-07T11:17:21.715Z",
+            "modified": "2021-06-07T11:17:21.715Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "9b5d7dc3-a898-474f-bb35-5aa262a90263",
+        "fields": {
+            "name": "Peas pulao with carrot raita",
+            "picture": "food_item/Peas_pulao_with_carrot_raita_jAp78c3.jpg",
+            "description": "Half cup of peas pulao served with 111.4gms of carrot raita is a great alternative to plain boiled rice and accompaniment for any main course, be it vegetarian or meat-based.\r\nPeas pulao consists of approximately 168 calories and carrot raita includes approximately 76 calories.",
+            "price": 37,
+            "restaurants": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "created": "2021-06-07T11:34:23.337Z",
+            "modified": "2021-06-07T11:34:23.337Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "bc6f1586-2791-4de9-aac2-2a41c3fe21cc",
+        "fields": {
+            "name": "Peas pulao with carrot raita",
+            "picture": "food_item/Peas_pulao_with_carrot_raita.jpg",
+            "description": "Half cup of peas pulao served with 111.4gms of carrot raita is a great alternative to plain boiled rice and accompaniment for any main course, be it vegetarian or meat-based.\r\nPeas pulao consists of approximately 168 calories and carrot raita includes approximately 76 calories.",
+            "price": 50,
+            "restaurants": "b9d80976-7126-4968-8233-d03695fe8663",
+            "created": "2021-06-07T11:15:30.291Z",
+            "modified": "2021-06-07T11:15:30.291Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "cf823ecc-4db3-474f-99e6-a18e59da48dd",
+        "fields": {
+            "name": "Methi parantha with onion chutney and greens",
+            "picture": "food_item/Moong_dal_khichdi_OjuEFRl.jpg",
+            "description": "2-3 methi parathas along with onion chutney, is a neat little package, which is healthy, yummy and delicious.\r\n1 paratha includes approximately 170-200 calories. Ensure that it is cooked with little to no oil.",
+            "price": 46,
+            "restaurants": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "created": "2021-06-07T11:35:58.055Z",
+            "modified": "2021-06-07T11:35:58.055Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "f11b0123-48f8-432a-8705-15a26cd658e1",
+        "fields": {
+            "name": "Masala poha",
+            "picture": "food_item/Pasta_salad_DpvYHOv.jpg",
+            "description": "One plate of masala poha is a delicious and nutritious option for lunch. It is light and refreshing, yet filling at the same time.\r\nServing size of 193.2gms consists of approximately 360 calories",
+            "price": 10,
+            "restaurants": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "created": "2021-06-07T11:33:31.954Z",
+            "modified": "2021-06-07T11:33:31.954Z"
+        }
+    },
+    {
+        "model": "restaurant.fooditem",
+        "pk": "fe97ff35-8fe9-4d3f-8ed0-942f0e4eb3dd",
+        "fields": {
+            "name": "Rice, sambhar and curd",
+            "picture": "food_item/Rice_sambhar_and_curd_BgYDy81.jpg",
+            "description": "2 cups of rice and 1 cup of sambhar and curd is an easy, quick and simple dish to make. It is a very healthy and nutritious office lunch.\r\nThis entire meal consists of approximately 300-500 calories. Ensure that you control the rice portion to less than 60gms and add some vegetables on the side.",
+            "price": 42,
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "created": "2021-06-07T11:32:14.186Z",
+            "modified": "2021-06-07T11:32:14.186Z"
         }
     },
     {
         "model": "restaurant.foodmanus",
-        "pk": "4ed21127-38d6-42f0-8aba-e696cd3e5fe9",
+        "pk": "03bc5db4-aae3-470a-b99f-67d21d5c451e",
         "fields": {
-            "restaurants": "0ff47304-ba61-4012-a190-86dbb6f1062a",
-            "day": null,
-            "note": null,
-            "created": "2021-06-05T23:29:18.788Z",
-            "modified": "2021-06-05T23:29:18.788Z",
+            "restaurants": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "day": "2021-06-01",
+            "note": "",
+            "created": "2021-06-07T11:43:57.930Z",
+            "modified": "2021-06-07T11:43:57.930Z",
             "food_item": [
-                "13983de3-5fa8-4878-91db-cfc1fd94af49",
-                "85f51af1-69dd-46ef-b59d-5c96c26ab293"
+                "17da2e89-eadc-4fe7-a7aa-d26d5937fa57"
             ]
         }
     },
     {
         "model": "restaurant.foodmanus",
-        "pk": "55606679-12fc-40f1-bb62-3109ca98b8ca",
+        "pk": "0555ccdb-f9ac-4488-8de5-1505076a8da3",
         "fields": {
-            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
-            "day": null,
-            "note": null,
-            "created": "2021-06-05T22:53:21.738Z",
-            "modified": "2021-06-05T22:53:21.738Z",
-            "food_item": []
-        }
-    },
-    {
-        "model": "restaurant.foodmanus",
-        "pk": "772e96b9-f931-43d5-8cde-47286cd02846",
-        "fields": {
-            "restaurants": "0ff47304-ba61-4012-a190-86dbb6f1062a",
-            "day": null,
-            "note": null,
-            "created": "2021-06-05T23:35:19.098Z",
-            "modified": "2021-06-05T23:35:19.098Z",
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "day": "2021-06-01",
+            "note": "",
+            "created": "2021-06-07T11:40:43.196Z",
+            "modified": "2021-06-07T11:40:43.196Z",
             "food_item": [
-                "13983de3-5fa8-4878-91db-cfc1fd94af49",
-                "85f51af1-69dd-46ef-b59d-5c96c26ab293"
+                "8ed6c930-a00b-4f35-9f5a-bd20b7222ab7",
+                "25ba644c-6e27-4d05-acf8-49390ca855e3"
             ]
         }
     },
     {
         "model": "restaurant.foodmanus",
-        "pk": "7d8a3f51-9781-4ca1-b405-a39ede1b8b70",
+        "pk": "062e2723-f001-40e0-be2d-85c2b919c571",
         "fields": {
-            "restaurants": "e3a1df8f-a8a6-471f-8a1f-13e86fcbd35c",
-            "day": null,
-            "note": null,
-            "created": "2021-06-05T23:28:54.307Z",
-            "modified": "2021-06-05T23:28:54.307Z",
-            "food_item": [
-                "13983de3-5fa8-4878-91db-cfc1fd94af49",
-                "85f51af1-69dd-46ef-b59d-5c96c26ab293"
-            ]
-        }
-    },
-    {
-        "model": "restaurant.foodmanus",
-        "pk": "a1ccbf41-ef0f-4b6c-bdb3-9bc18b9ad90c",
-        "fields": {
-            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
-            "day": null,
-            "note": null,
-            "created": "2021-06-05T23:03:03.079Z",
-            "modified": "2021-06-05T23:03:03.079Z",
-            "food_item": [
-                "85f51af1-69dd-46ef-b59d-5c96c26ab293"
-            ]
-        }
-    },
-    {
-        "model": "restaurant.foodmanus",
-        "pk": "af13c3b8-f7b5-4020-895b-f11fe4f3102c",
-        "fields": {
-            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
-            "day": null,
-            "note": null,
-            "created": "2021-06-05T23:25:10.803Z",
-            "modified": "2021-06-05T23:25:10.803Z",
-            "food_item": [
-                "13983de3-5fa8-4878-91db-cfc1fd94af49",
-                "85f51af1-69dd-46ef-b59d-5c96c26ab293"
-            ]
-        }
-    },
-    {
-        "model": "restaurant.foodmanus",
-        "pk": "b422ee9a-4fb5-46ce-b69a-9cd91af6ea46",
-        "fields": {
-            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
-            "day": null,
-            "note": null,
-            "created": "2021-06-05T23:13:15.238Z",
-            "modified": "2021-06-05T23:13:15.238Z",
-            "food_item": []
-        }
-    },
-    {
-        "model": "restaurant.foodmanus",
-        "pk": "f9c331cf-0b54-4844-bce4-0dd889ab8714",
-        "fields": {
-            "restaurants": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
+            "restaurants": "b9d80976-7126-4968-8233-d03695fe8663",
             "day": "2021-06-06",
             "note": "",
-            "created": "2021-06-05T23:11:01.175Z",
-            "modified": "2021-06-05T23:48:18.373Z",
-            "food_item": []
+            "created": "2021-06-07T11:40:20.947Z",
+            "modified": "2021-06-07T11:40:20.947Z",
+            "food_item": [
+                "bc6f1586-2791-4de9-aac2-2a41c3fe21cc",
+                "120331dc-1865-498f-a097-c1d5732f1342",
+                "929f442b-76e9-404d-b900-079b4f061531"
+            ]
         }
     },
     {
-        "model": "restaurant.votes",
-        "pk": "341f9534-74df-4958-a2e6-749788e6ca9b",
+        "model": "restaurant.foodmanus",
+        "pk": "088e6ff7-2ae7-4819-abe0-a375db47c2fe",
         "fields": {
-            "restaurant": "c4f6ef49-421b-4bf5-8f57-66fa5ad2ed99",
-            "vote_count": 1,
+            "restaurants": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "day": "2021-06-03",
+            "note": "",
+            "created": "2021-06-07T11:45:49.982Z",
+            "modified": "2021-06-07T11:45:49.982Z",
+            "food_item": [
+                "cf823ecc-4db3-474f-99e6-a18e59da48dd",
+                "23fcced6-bd0e-4496-9d09-190fe6b83806"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "0f2d8f0c-a79e-473e-be9e-9b799de5279a",
+        "fields": {
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "day": "2021-06-02",
+            "note": "",
+            "created": "2021-06-07T11:40:59.844Z",
+            "modified": "2021-06-07T11:40:59.844Z",
+            "food_item": [
+                "8ed6c930-a00b-4f35-9f5a-bd20b7222ab7",
+                "25ba644c-6e27-4d05-acf8-49390ca855e3"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "13cb7c85-2b67-4ef9-a191-bc5f7523d214",
+        "fields": {
+            "restaurants": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "day": "2021-06-07",
+            "note": "",
+            "created": "2021-06-07T11:45:06.972Z",
+            "modified": "2021-06-07T11:45:06.972Z",
+            "food_item": [
+                "17da2e89-eadc-4fe7-a7aa-d26d5937fa57"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "1d020a03-a863-4717-ba71-511a4139a861",
+        "fields": {
+            "restaurants": "b9d80976-7126-4968-8233-d03695fe8663",
+            "day": "2021-06-07",
+            "note": "",
+            "created": "2021-06-07T11:40:31.361Z",
+            "modified": "2021-06-07T11:40:31.361Z",
+            "food_item": [
+                "bc6f1586-2791-4de9-aac2-2a41c3fe21cc",
+                "929f442b-76e9-404d-b900-079b4f061531"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "20565594-f6bf-403c-86c9-12a22415f2fb",
+        "fields": {
+            "restaurants": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "day": "2021-06-02",
+            "note": "",
+            "created": "2021-06-07T11:44:10.541Z",
+            "modified": "2021-06-07T11:44:10.541Z",
+            "food_item": [
+                "9b5d7dc3-a898-474f-bb35-5aa262a90263",
+                "2dde0042-ee23-42dc-99d6-1ef50d7f942b"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "303e84a8-d9de-4ac0-8620-5c6d45c3dd88",
+        "fields": {
+            "restaurants": "b9d80976-7126-4968-8233-d03695fe8663",
+            "day": "2021-06-01",
+            "note": "",
+            "created": "2021-06-07T11:38:56.832Z",
+            "modified": "2021-06-07T11:38:56.832Z",
+            "food_item": [
+                "bc6f1586-2791-4de9-aac2-2a41c3fe21cc",
+                "929f442b-76e9-404d-b900-079b4f061531"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "34d8c74a-31a0-4158-a44a-8ddb7a40f3c1",
+        "fields": {
+            "restaurants": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "day": "2021-06-05",
+            "note": "",
+            "created": "2021-06-07T11:43:18.972Z",
+            "modified": "2021-06-07T11:43:18.972Z",
+            "food_item": [
+                "f11b0123-48f8-432a-8705-15a26cd658e1",
+                "85bb4dcc-5a4f-404d-8a2f-00ac734f73af"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "34f60cb0-7198-4423-bd12-2f5537e3f6c7",
+        "fields": {
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "day": "2021-06-04",
+            "note": "",
+            "created": "2021-06-07T11:41:39.549Z",
+            "modified": "2021-06-07T11:41:39.549Z",
+            "food_item": [
+                "8ed6c930-a00b-4f35-9f5a-bd20b7222ab7",
+                "4595c8cb-ecca-4289-8b90-a225cb9770ff",
+                "fe97ff35-8fe9-4d3f-8ed0-942f0e4eb3dd"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "3c6d8030-d70c-4977-baca-5e0189827fd8",
+        "fields": {
+            "restaurants": "b9d80976-7126-4968-8233-d03695fe8663",
+            "day": "2021-06-05",
+            "note": "",
+            "created": "2021-06-07T11:40:00.771Z",
+            "modified": "2021-06-07T11:40:00.771Z",
+            "food_item": [
+                "120331dc-1865-498f-a097-c1d5732f1342"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "40e478eb-5a6d-48c2-9ecd-490e44c38351",
+        "fields": {
+            "restaurants": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "day": "2021-06-04",
+            "note": "",
+            "created": "2021-06-07T11:43:05.508Z",
+            "modified": "2021-06-07T11:43:05.508Z",
+            "food_item": [
+                "09b55dbd-e42c-43d4-9f9e-5c315e285fb7"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "49b83898-de2d-4b31-b73c-2b68e75719c2",
+        "fields": {
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "day": "2021-06-07",
+            "note": "",
+            "created": "2021-06-07T11:42:15.109Z",
+            "modified": "2021-06-07T11:42:15.109Z",
+            "food_item": [
+                "25ba644c-6e27-4d05-acf8-49390ca855e3",
+                "fe97ff35-8fe9-4d3f-8ed0-942f0e4eb3dd"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "59ef59e4-d049-40f1-b455-8aecc862a396",
+        "fields": {
+            "restaurants": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "day": "2021-06-07",
+            "note": "",
+            "created": "2021-06-07T11:46:34.283Z",
+            "modified": "2021-06-07T11:46:34.283Z",
+            "food_item": [
+                "cf823ecc-4db3-474f-99e6-a18e59da48dd"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "5b1a0cd1-b73c-460c-93d9-0288c05595e4",
+        "fields": {
+            "restaurants": "b9d80976-7126-4968-8233-d03695fe8663",
+            "day": "2021-06-03",
+            "note": "",
+            "created": "2021-06-07T11:39:38.119Z",
+            "modified": "2021-06-07T11:39:38.119Z",
+            "food_item": [
+                "3cd76250-d748-4d88-a9f8-6717ef761a40"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "5e600a84-017d-44f3-94ba-31b377692dd2",
+        "fields": {
+            "restaurants": "b9d80976-7126-4968-8233-d03695fe8663",
+            "day": "2021-06-02",
+            "note": "",
+            "created": "2021-06-07T11:39:26.895Z",
+            "modified": "2021-06-07T11:39:26.895Z",
+            "food_item": [
+                "120331dc-1865-498f-a097-c1d5732f1342",
+                "929f442b-76e9-404d-b900-079b4f061531"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "650512d6-9314-4de1-bb68-4adf1e57f708",
+        "fields": {
+            "restaurants": "b9d80976-7126-4968-8233-d03695fe8663",
+            "day": "2021-06-04",
+            "note": "",
+            "created": "2021-06-07T11:39:52.111Z",
+            "modified": "2021-06-07T11:39:52.111Z",
+            "food_item": [
+                "bc6f1586-2791-4de9-aac2-2a41c3fe21cc",
+                "929f442b-76e9-404d-b900-079b4f061531"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "802c2cc3-e0e3-4117-90ee-2ac796d6b38a",
+        "fields": {
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
             "day": "2021-06-06",
-            "created": "2021-06-06T00:19:37.756Z",
-            "modified": "2021-06-06T00:19:37.759Z",
-            "employee": [
-                "0dad9b94-ddb2-4714-9c93-20993969ef9b"
+            "note": "",
+            "created": "2021-06-07T11:42:03.257Z",
+            "modified": "2021-06-07T11:42:03.257Z",
+            "food_item": [
+                "25ba644c-6e27-4d05-acf8-49390ca855e3"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "8aea9f39-0b54-478a-9e94-99bd273f28c9",
+        "fields": {
+            "restaurants": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "day": "2021-06-05",
+            "note": "",
+            "created": "2021-06-07T11:46:12.356Z",
+            "modified": "2021-06-07T11:46:12.356Z",
+            "food_item": [
+                "cf823ecc-4db3-474f-99e6-a18e59da48dd"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "966f93ac-8220-49bd-ba5b-b1b459180d8c",
+        "fields": {
+            "restaurants": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "day": "2021-06-01",
+            "note": "",
+            "created": "2021-06-07T11:42:29.056Z",
+            "modified": "2021-06-07T11:42:29.056Z",
+            "food_item": [
+                "f11b0123-48f8-432a-8705-15a26cd658e1",
+                "85bb4dcc-5a4f-404d-8a2f-00ac734f73af"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "a1bfb974-8fac-44c2-89b6-f82cd5dca19f",
+        "fields": {
+            "restaurants": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "day": "2021-06-04",
+            "note": "",
+            "created": "2021-06-07T11:46:01.659Z",
+            "modified": "2021-06-07T11:46:01.659Z",
+            "food_item": [
+                "23fcced6-bd0e-4496-9d09-190fe6b83806"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "b0c8251a-b2ad-436a-a607-352df49e397b",
+        "fields": {
+            "restaurants": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "day": "2021-06-01",
+            "note": "",
+            "created": "2021-06-07T11:45:15.845Z",
+            "modified": "2021-06-07T11:45:15.845Z",
+            "food_item": [
+                "23fcced6-bd0e-4496-9d09-190fe6b83806"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "b1ca3018-4670-4fe8-b7c0-fd02ed0fa155",
+        "fields": {
+            "restaurants": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "day": "2021-06-06",
+            "note": "",
+            "created": "2021-06-07T11:46:23.344Z",
+            "modified": "2021-06-07T11:46:23.344Z",
+            "food_item": [
+                "23fcced6-bd0e-4496-9d09-190fe6b83806",
+                "cf823ecc-4db3-474f-99e6-a18e59da48dd"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "b76f5f30-0a08-4369-a1d4-89180e0c1966",
+        "fields": {
+            "restaurants": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "day": "2021-06-06",
+            "note": "",
+            "created": "2021-06-07T11:43:36.236Z",
+            "modified": "2021-06-07T11:43:36.236Z",
+            "food_item": [
+                "f11b0123-48f8-432a-8705-15a26cd658e1",
+                "85bb4dcc-5a4f-404d-8a2f-00ac734f73af"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "bbfa6ec8-18d2-49ff-8c38-e71f93a01626",
+        "fields": {
+            "restaurants": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "day": "2021-06-02",
+            "note": "",
+            "created": "2021-06-07T11:45:28.486Z",
+            "modified": "2021-06-07T11:45:28.486Z",
+            "food_item": [
+                "cf823ecc-4db3-474f-99e6-a18e59da48dd"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "c7d7d140-e875-46e3-ab23-32636e0e3b28",
+        "fields": {
+            "restaurants": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "day": "2021-06-05",
+            "note": "",
+            "created": "2021-06-07T11:44:48.500Z",
+            "modified": "2021-06-07T11:44:48.500Z",
+            "food_item": [
+                "2dde0042-ee23-42dc-99d6-1ef50d7f942b"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "d89799b2-8188-4e5c-ae63-8d875e91adc7",
+        "fields": {
+            "restaurants": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "day": "2021-06-02",
+            "note": "",
+            "created": "2021-06-07T11:42:39.990Z",
+            "modified": "2021-06-07T11:42:39.990Z",
+            "food_item": [
+                "f11b0123-48f8-432a-8705-15a26cd658e1"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "da147b2e-628a-4777-aa8f-17a28423be0f",
+        "fields": {
+            "restaurants": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "day": "2021-06-04",
+            "note": "",
+            "created": "2021-06-07T11:44:39.490Z",
+            "modified": "2021-06-07T11:44:39.490Z",
+            "food_item": [
+                "9b5d7dc3-a898-474f-bb35-5aa262a90263",
+                "2dde0042-ee23-42dc-99d6-1ef50d7f942b",
+                "17da2e89-eadc-4fe7-a7aa-d26d5937fa57"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "dc18af1f-9dbf-4b0d-bfd2-ef9afb310a0c",
+        "fields": {
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "day": "2021-06-05",
+            "note": "",
+            "created": "2021-06-07T11:41:50.848Z",
+            "modified": "2021-06-07T11:41:50.848Z",
+            "food_item": [
+                "25ba644c-6e27-4d05-acf8-49390ca855e3",
+                "4595c8cb-ecca-4289-8b90-a225cb9770ff"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "e1712f8d-dea7-4551-9fea-3185640e5723",
+        "fields": {
+            "restaurants": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "day": "2021-06-03",
+            "note": "",
+            "created": "2021-06-07T11:44:27.244Z",
+            "modified": "2021-06-07T11:44:27.244Z",
+            "food_item": [
+                "2dde0042-ee23-42dc-99d6-1ef50d7f942b"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "e72bafa4-6dbe-49e2-8905-d47df6e35fa8",
+        "fields": {
+            "restaurants": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "day": "2021-06-03",
+            "note": "",
+            "created": "2021-06-07T11:42:54.535Z",
+            "modified": "2021-06-07T11:42:54.535Z",
+            "food_item": [
+                "09b55dbd-e42c-43d4-9f9e-5c315e285fb7",
+                "f11b0123-48f8-432a-8705-15a26cd658e1",
+                "85bb4dcc-5a4f-404d-8a2f-00ac734f73af"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "f3d2120d-960b-493c-bf05-5618792b2558",
+        "fields": {
+            "restaurants": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "day": "2021-06-07",
+            "note": "",
+            "created": "2021-06-07T11:43:45.378Z",
+            "modified": "2021-06-07T11:43:45.378Z",
+            "food_item": [
+                "85bb4dcc-5a4f-404d-8a2f-00ac734f73af"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.foodmanus",
+        "pk": "fc0c7547-d297-49ec-96cb-d5d12fe72b20",
+        "fields": {
+            "restaurants": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "day": "2021-06-03",
+            "note": "",
+            "created": "2021-06-07T11:41:17.124Z",
+            "modified": "2021-06-07T11:41:17.124Z",
+            "food_item": [
+                "8ed6c930-a00b-4f35-9f5a-bd20b7222ab7",
+                "fe97ff35-8fe9-4d3f-8ed0-942f0e4eb3dd"
             ]
         }
     },
     {
         "model": "restaurant.votes",
-        "pk": "6703b71f-c5fb-4de7-9529-ae46199272d4",
+        "pk": "054ebdc6-daf0-4c57-9028-586858bb46d2",
         "fields": {
-            "restaurant": "0ff47304-ba61-4012-a190-86dbb6f1062a",
+            "restaurant": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "vote_count": 4,
+            "day": "2021-06-04",
+            "created": "2021-06-07T11:51:53.872Z",
+            "modified": "2021-06-07T11:51:53.872Z",
+            "employee": [
+                "2ae6bbb7-d937-4106-8966-c9d6dae7bbc4",
+                "895f6b02-1d3b-4a30-be68-f49f7bfce917",
+                "a022b59f-da36-43a8-b8e2-8651bc27afd1",
+                "e5e18f71-2741-4474-8cc1-5ac3402d66c0"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "15d8a9e0-ca14-4fa6-8411-a6ce0be08041",
+        "fields": {
+            "restaurant": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "vote_count": 1,
+            "day": "2021-06-03",
+            "created": "2021-06-07T11:51:02.187Z",
+            "modified": "2021-06-07T11:51:02.187Z",
+            "employee": [
+                "895f6b02-1d3b-4a30-be68-f49f7bfce917"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "2bc44c20-82e4-400a-b072-c84c2c03c77b",
+        "fields": {
+            "restaurant": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "vote_count": 3,
+            "day": "2021-06-07",
+            "created": "2021-06-07T11:56:05.751Z",
+            "modified": "2021-06-07T11:56:05.751Z",
+            "employee": [
+                "2ae6bbb7-d937-4106-8966-c9d6dae7bbc4",
+                "a022b59f-da36-43a8-b8e2-8651bc27afd1",
+                "bb657f4b-5030-4ac3-8c4f-716589cc00c1"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "32fa78eb-27a8-447e-8b15-a1eb817c25cd",
+        "fields": {
+            "restaurant": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "vote_count": 4,
+            "day": "2021-06-03",
+            "created": "2021-06-07T11:50:32.111Z",
+            "modified": "2021-06-07T11:50:32.111Z",
+            "employee": [
+                "895f6b02-1d3b-4a30-be68-f49f7bfce917",
+                "bb657f4b-5030-4ac3-8c4f-716589cc00c1",
+                "cdc3435e-c090-43a5-8e03-daf180e0f88f",
+                "e5e18f71-2741-4474-8cc1-5ac3402d66c0"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "502a36ec-804d-4cf6-b926-dd8ac4f3c6a4",
+        "fields": {
+            "restaurant": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "vote_count": 3,
+            "day": "2021-06-02",
+            "created": "2021-06-07T11:48:53.451Z",
+            "modified": "2021-06-07T11:48:53.451Z",
+            "employee": [
+                "895f6b02-1d3b-4a30-be68-f49f7bfce917",
+                "bb657f4b-5030-4ac3-8c4f-716589cc00c1",
+                "e5e18f71-2741-4474-8cc1-5ac3402d66c0"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "5102017f-30d4-4469-a51a-184ff9e5b757",
+        "fields": {
+            "restaurant": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "vote_count": 5,
+            "day": "2021-06-07",
+            "created": "2021-06-07T11:54:01.115Z",
+            "modified": "2021-06-07T11:54:01.115Z",
+            "employee": [
+                "2ae6bbb7-d937-4106-8966-c9d6dae7bbc4",
+                "895f6b02-1d3b-4a30-be68-f49f7bfce917",
+                "a022b59f-da36-43a8-b8e2-8651bc27afd1",
+                "bb657f4b-5030-4ac3-8c4f-716589cc00c1",
+                "e5e18f71-2741-4474-8cc1-5ac3402d66c0"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "6127310d-b2c7-455e-8fb0-8a772515a3cf",
+        "fields": {
+            "restaurant": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "vote_count": 2,
+            "day": "2021-06-04",
+            "created": "2021-06-07T11:52:08.192Z",
+            "modified": "2021-06-07T11:52:08.192Z",
+            "employee": [
+                "895f6b02-1d3b-4a30-be68-f49f7bfce917",
+                "cdc3435e-c090-43a5-8e03-daf180e0f88f"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "6d773d5e-ad86-405c-a40e-c445169eb1ae",
+        "fields": {
+            "restaurant": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "vote_count": 2,
+            "day": "2021-06-07",
+            "created": "2021-06-07T11:55:52.324Z",
+            "modified": "2021-06-07T11:55:52.324Z",
+            "employee": [
+                "895f6b02-1d3b-4a30-be68-f49f7bfce917",
+                "e5e18f71-2741-4474-8cc1-5ac3402d66c0"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "6d9d2276-d3e3-483c-82c3-b4ea10416049",
+        "fields": {
+            "restaurant": "b9d80976-7126-4968-8233-d03695fe8663",
+            "vote_count": 4,
+            "day": "2021-06-06",
+            "created": "2021-06-07T11:53:16.378Z",
+            "modified": "2021-06-07T11:53:16.378Z",
+            "employee": [
+                "7eb16fe2-1184-4d0a-aafb-241aa04231f1",
+                "895f6b02-1d3b-4a30-be68-f49f7bfce917",
+                "bb657f4b-5030-4ac3-8c4f-716589cc00c1",
+                "e5e18f71-2741-4474-8cc1-5ac3402d66c0"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "7a6e509e-e9b4-43d9-9f53-325c952fca51",
+        "fields": {
+            "restaurant": "b9d80976-7126-4968-8233-d03695fe8663",
+            "vote_count": 3,
+            "day": "2021-06-01",
+            "created": "2021-06-07T11:47:35.133Z",
+            "modified": "2021-06-07T11:47:35.133Z",
+            "employee": [
+                "7eb16fe2-1184-4d0a-aafb-241aa04231f1",
+                "a022b59f-da36-43a8-b8e2-8651bc27afd1",
+                "bb657f4b-5030-4ac3-8c4f-716589cc00c1"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "8554a15a-ab46-4b4a-ad88-383148e171d0",
+        "fields": {
+            "restaurant": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "vote_count": 1,
+            "day": "2021-06-01",
+            "created": "2021-06-07T11:47:48.243Z",
+            "modified": "2021-06-07T11:47:48.243Z",
+            "employee": [
+                "e5e18f71-2741-4474-8cc1-5ac3402d66c0"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "8f5c5c1a-583e-4862-b6c7-e91dea4107c6",
+        "fields": {
+            "restaurant": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "vote_count": 2,
+            "day": "2021-06-03",
+            "created": "2021-06-07T11:50:46.655Z",
+            "modified": "2021-06-07T11:50:46.655Z",
+            "employee": [
+                "895f6b02-1d3b-4a30-be68-f49f7bfce917",
+                "e5e18f71-2741-4474-8cc1-5ac3402d66c0"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "95503f5b-e03c-450d-bfa9-09380f444952",
+        "fields": {
+            "restaurant": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "vote_count": 2,
+            "day": "2021-06-05",
+            "created": "2021-06-07T11:52:45.621Z",
+            "modified": "2021-06-07T11:52:45.621Z",
+            "employee": [
+                "895f6b02-1d3b-4a30-be68-f49f7bfce917",
+                "e5e18f71-2741-4474-8cc1-5ac3402d66c0"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "a780c598-4fde-4361-af5d-520b4651700e",
+        "fields": {
+            "restaurant": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
             "vote_count": 2,
             "day": "2021-06-06",
-            "created": "2021-06-06T00:17:26.139Z",
-            "modified": "2021-06-06T00:18:04.338Z",
+            "created": "2021-06-07T11:53:33.022Z",
+            "modified": "2021-06-07T11:53:33.022Z",
             "employee": [
-                "0dad9b94-ddb2-4714-9c93-20993969ef9b",
-                "965af7ad-d531-4644-80e7-c2105b17a9a2"
+                "895f6b02-1d3b-4a30-be68-f49f7bfce917",
+                "e5e18f71-2741-4474-8cc1-5ac3402d66c0"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "da3215fc-a43c-4a4a-bed1-f52ed365e42f",
+        "fields": {
+            "restaurant": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "vote_count": 4,
+            "day": "2021-06-05",
+            "created": "2021-06-07T11:52:31.384Z",
+            "modified": "2021-06-07T11:52:31.384Z",
+            "employee": [
+                "2ae6bbb7-d937-4106-8966-c9d6dae7bbc4",
+                "7eb16fe2-1184-4d0a-aafb-241aa04231f1",
+                "a022b59f-da36-43a8-b8e2-8651bc27afd1",
+                "bb657f4b-5030-4ac3-8c4f-716589cc00c1"
+            ]
+        }
+    },
+    {
+        "model": "restaurant.votes",
+        "pk": "f0a2cc77-7010-49d0-99d1-adf3937d8600",
+        "fields": {
+            "restaurant": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "vote_count": 1,
+            "day": "2021-06-02",
+            "created": "2021-06-07T11:49:09.656Z",
+            "modified": "2021-06-07T11:49:09.656Z",
+            "employee": [
+                "e5e18f71-2741-4474-8cc1-5ac3402d66c0"
             ]
         }
     },
     {
         "model": "restaurant.winner",
-        "pk": "3e0babd8-28c7-46f2-8fa4-304d904d9478",
+        "pk": "4f827ba3-23a5-43fd-af8f-d0ac6b311525",
         "fields": {
-            "restaurant": "0ff47304-ba61-4012-a190-86dbb6f1062a",
+            "restaurant": "b9d80976-7126-4968-8233-d03695fe8663",
+            "day": "2021-06-01",
+            "created": "2021-06-07T11:48:23.430Z",
+            "modified": "2021-06-07T11:48:23.430Z"
+        }
+    },
+    {
+        "model": "restaurant.winner",
+        "pk": "6ea16b57-3ad8-4fb5-89c6-d41495caab70",
+        "fields": {
+            "restaurant": "fb828b3a-c46f-4755-83ae-207577c37024",
+            "day": "2021-06-03",
+            "created": "2021-06-07T11:56:22.104Z",
+            "modified": "2021-06-07T11:56:22.104Z"
+        }
+    },
+    {
+        "model": "restaurant.winner",
+        "pk": "8c69d82d-2c5a-4327-a1bb-233b921c42a4",
+        "fields": {
+            "restaurant": "6a3d735b-e83c-47d3-9ffa-c2a62c5a4efd",
+            "day": "2021-06-04",
+            "created": "2021-06-07T11:56:30.353Z",
+            "modified": "2021-06-07T11:56:30.353Z"
+        }
+    },
+    {
+        "model": "restaurant.winner",
+        "pk": "94049427-4ac6-435c-8141-e4a8b45db357",
+        "fields": {
+            "restaurant": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "day": "2021-06-07",
+            "created": "2021-06-07T11:57:08.154Z",
+            "modified": "2021-06-07T11:57:08.154Z"
+        }
+    },
+    {
+        "model": "restaurant.winner",
+        "pk": "bf1e5d9a-7239-4df7-bb91-0f7c64bdb99e",
+        "fields": {
+            "restaurant": "b9d80976-7126-4968-8233-d03695fe8663",
             "day": "2021-06-06",
-            "created": "2021-06-06T08:37:22.257Z",
-            "modified": "2021-06-06T08:37:22.257Z"
+            "created": "2021-06-07T11:56:54.064Z",
+            "modified": "2021-06-07T11:56:54.064Z"
+        }
+    },
+    {
+        "model": "restaurant.winner",
+        "pk": "cb010a99-d5d2-4014-9be8-d00839c0d063",
+        "fields": {
+            "restaurant": "0e8032d2-f3a1-4c12-acbc-0f8e476905ed",
+            "day": "2021-06-05",
+            "created": "2021-06-07T11:56:40.391Z",
+            "modified": "2021-06-07T11:56:40.391Z"
+        }
+    },
+    {
+        "model": "restaurant.winner",
+        "pk": "de5ae038-2bcf-4297-ba5d-0d9af090dfe3",
+        "fields": {
+            "restaurant": "c191157c-9728-417e-8ea8-d70d3ef08064",
+            "day": "2021-06-02",
+            "created": "2021-06-07T11:49:23.021Z",
+            "modified": "2021-06-07T11:49:23.021Z"
         }
     }
     ]
+    
